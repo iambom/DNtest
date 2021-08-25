@@ -1,0 +1,13 @@
+@import './header.css';
+@import './guide.css';
+@import './conversation.css';
+@import './labels.css';
+@import './toolbox.css';
+
+#app {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #1f1f2f;
+}

@@ -1,0 +1,162 @@
+{
+  "id": 1,
+  "task": {
+    "title": "Tell us what the topic is about",
+    "content": "AI can't without talking about context. Let's share the topics in each message so that you can talk smarter~! <br /><br /> Click on a topic in the list on the right for each message shown in the center of the screen :)"
+  },
+  "target": "PERSON",
+  "messages": {
+    "list": [
+      {
+        "id": 1,
+        "text": "What are you doing?",
+        "type": "AI",
+        "createAt1": "2021-08-20T11:44:49.341559Z",
+        "createAt": "2021-08-20T11:44:49.000+09:00",
+        "created": "오전 11:44:49"
+      },
+      {
+        "id": 2,
+        "text": "I have one more semester, <br /> but it would be great to have a job lined up.",
+        "type": "PERSON",
+        "createAt1": "2021-08-20T11:45:46.341559Z",
+        "createAt": "2021-08-20T11:45:46.000+09:00",
+        "created": "오전 11:45:46"
+      },
+      {
+        "id": 3,
+        "text": "How is your day going?",
+        "type": "AI",
+        "createAt1": "2021-08-20T11:45:57.341559Z",
+        "createAt": "2021-08-20T11:45:57.000+09:00",
+        "created": "오전 11:45:57"
+      },
+      {
+        "id": 4,
+        "text": "I'm not even half done yet.",
+        "type": "PERSON",
+        "createAt1": "2021-08-20T11:46:15.341559Z",
+        "createAt": "2021-08-20T11:46:15.000+09:00",
+        "created": "오전 11:46:15"
+      },
+      {
+        "id": 5,
+        "text": "Hm.......",
+        "type": "PERSON",
+        "createAt1": "2021-08-21T10:55:22.341559Z",
+        "createAt": "2021-08-21T10:55:22.000+09:00",
+        "created": "오전 10:55:22"
+      },
+      {
+        "id": 6,
+        "text": "You feel stressed out now.",
+        "type": "AI",
+        "createAt1": "2021-08-21T10:55:26.341559Z",
+        "createAt": "2021-08-21T10:55:26.000+09:00",
+        "created": "오전 10:55:26"
+      },
+      {
+        "id": 7,
+        "text": "That's an understatement.",
+        "type": "PERSON",
+        "createAt1": "2021-08-21T10:55:34.341559Z",
+        "createAt": "2021-08-21T10:55:34.000+09:00",
+        "created": "오전 10:55:34"
+      },
+      {
+        "id": 8,
+        "text": "What are you doing now?",
+        "type": "AI",
+        "createAt1": "2021-08-21T10:55:35.341559Z",
+        "createAt": "2021-08-21T10:55:35.000+09:00",
+        "created": "오전 10:55:35"
+      },
+      {
+        "id": 9,
+        "text": "I'm watching TV.",
+        "type": "PERSON",
+        "createAt1": "2021-08-21T10:55:48.341559Z",
+        "createAt": "2021-08-21T10:55:48.000+09:00",
+        "created": "오전 10:55:48"
+      },
+      {
+        "id": 10,
+        "text": "What's that?",
+        "type": "AI",
+        "createAt1": "2021-08-21T10:55:49.341559Z",
+        "createAt": "2021-08-21T10:55:49.000+09:00",
+        "created": "오전 10:55:49"
+      },
+      {
+        "id": 11,
+        "text": "You want to do something?",
+        "type": "PERSON",
+        "createAt1": "2021-08-21T10:56:01.341559Z",
+        "createAt": "2021-08-21T10:56:01.000+09:00",
+        "created": "오전 10:56:01"
+      },
+      {
+        "id": 12,
+        "text": "I'm going to the bank.",
+        "type": "AI",
+        "createAt1": "2021-08-21T10:56:02.341559Z",
+        "createAt": "2021-08-21T10:56:02.000+09:00",
+        "created": "오전 10:56:02"
+      },
+      {
+        "id": 13,
+        "text": "?",
+        "type": "PERSON",
+        "createAt1": "2021-08-21T10:56:06.341559Z",
+        "createAt": "2021-08-21T10:56:06.000+09:00",
+        "created": "오전 10:56:06"
+      },
+      {
+        "id": 14,
+        "text": "God~",
+        "type": "AI",
+        "createAt1": "2021-08-21T10:56:07.341559Z",
+        "createAt": "2021-08-21T10:56:07.000+09:00",
+        "created": "오전 10:56:07"
+      }
+    ]
+  },
+  "labels": {
+    "title": "SELECTABLE LABELS",
+    "description": "There are seven selectable themes. Read the message and chose the most appropriate topic!",
+    "list": [
+      {
+        "topic": "CLAIM",
+        "description": "Express opinion"
+      },
+      {
+        "topic": "REACT",
+        "description": "Response to something"
+      },
+      {
+        "topic": "QUESTION",
+        "description": "Questioning the content"
+      },
+      {
+        "topic": "ADVICE",
+        "description": "Provide helpful advice"
+      },
+      {
+        "topic": "REQUEST",
+        "description": "Ask the other person to do something"
+      },
+      {
+        "topic": "SATISFACTION",
+        "description": "Obtain satisfactory results"
+      },
+      {
+        "topic": "DISSATISFACTION",
+        "description": "Get unssatisfactory results"
+      },
+      {
+        "topic": "SKIP",
+        "description": "Hard to choose, no selection"
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+
+.toolbox-container {
+    text-align: center;
+    height: 64px;    
+    opacity: 0.98;
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 0 rgba(0, 0, 0, 0.5);
+    background-color: #1f1f2f;
+}
+.toolbox-container button{
+    width: 64px;
+    height: 64px;
+    position: relative;
+    padding-top: 42px;
+    padding-bottom: 10px;font-family: SpoqaHanSans;
+    font-size: 11px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+.toolbox-container .btn-next{
+    margin-left: 19px;
+}
+.toolbox-container .btn-submit{
+    margin-left: 102px;
+}
+.toolbox-container button:before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.toolbox-container .btn-prev:before{
+    background-image: url('../assets/images/ic-24-m-prev-w@2x.png');
+}
+.toolbox-container .btn-next:before{
+    background-image: url('../assets/images/ic-24-m-next-w@2x.png');
+}
+.toolbox-container .btn-submit:before{
+    background-image: url('../assets/images/ic-24-m-finish-w@2x.png');
+}
