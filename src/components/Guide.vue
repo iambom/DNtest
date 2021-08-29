@@ -15,10 +15,10 @@ Click on a topic in the list on the right for each message shown in the center o
           <div class="progress-bar">
             <div class="text-wrapper">
                 <span class="teaching-progress">Teaching Progress</span>
-                <span class='percentage'>84%(43/51)</span>
+                <span class='percentage'>{{percentage}}% ({{labeledLength}}/{{formDataTotalLength}})</span>
             </div>
             <div class="bar-track">
-                <div class="bar" ></div>
+                <div class="bar" :style="{'width': `${percentage}%`}" ></div>
             </div>
           </div>
       </div>
@@ -26,8 +26,17 @@ Click on a topic in the list on the right for each message shown in the center o
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-
+  computed: {
+    ...mapGetters([
+      'formDataTotalLength',
+      'labeledLength'
+    ]),
+    percentage() {
+      return Math.round((this.labeledLength / this.formDataTotalLength) * 100)
+    }
+  }
 }
 </script>
 

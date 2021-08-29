@@ -19,6 +19,15 @@ export default new Vuex.Store({
       labels(state) {
         return state.dummyData.labels
       },
+      formDataTotalLength(state) {
+        return state.formData.length
+      },
+      labeledLength(state) {
+        const labelData = state.formData.filter((item) => {
+          return item.label !== null
+        })
+        return labelData.length
+      }
     },
     mutations: {
       setData(state, data) {

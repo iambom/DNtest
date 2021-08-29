@@ -38,6 +38,8 @@ export default {
             'setSelectedMessage'
         ]),
         clickList() {
+            if(this.selectedMessage === null) return;
+
             const prevLabel = this.formData[this.selectedMessageIndex].label;
             console.log(prevLabel)
             const newFormData = this.formData;
