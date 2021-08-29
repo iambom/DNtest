@@ -5,7 +5,8 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
-        dummyData: null
+        dummyData: null,
+        formData: {},
     },
     getters: {
       target(state) {
@@ -19,13 +20,16 @@ export default new Vuex.Store({
       }
     },
     mutations: {
-      getData(state, data) {
-          state.dummyData = data;
+      setData(state, data) {
+        state.dummyData = data;
+      },
+      setFormData(state, data) {
+        state.formData = data;
       }
     },
     actions: {
       setData({ commit }, data) {
-        commit('getData', data)
-      }
+        commit('setData', data)
+      },
     }
 });
