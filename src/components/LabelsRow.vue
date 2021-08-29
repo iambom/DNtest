@@ -8,24 +8,22 @@
 </template>
 
 <script>
-import { mapMutations, mapState } from 'vuex'
+import { mapGetters, mapMutations, mapState } from 'vuex'
 export default {
     props: {
         label: Object,
     },
     computed: {
         ...mapState([
-        'formData',
-        'selectedMessage'
+            'formData',
+            'selectedMessage',
         ]),
-        selectedMessageIndex() {
-            return this.formData.findIndex((item) => item.id === this.selectedMessage)
-        },
+        ...mapGetters([
+            'nextMessageId',
+            'selectedMessageIndex'
+        ]),
         isSelected() {
             return this.formData[this.selectedMessageIndex]?.label === this.label.topic
-        },
-        nextMessageId() {
-            return this.formData[this.selectedMessageIndex + 1].id
         },
         isLastIndex() {
             return this.selectedMessageIndex !== this.formData.length - 1

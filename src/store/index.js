@@ -27,7 +27,16 @@ export default new Vuex.Store({
           return item.label !== null
         })
         return labelData.length
-      }
+      },
+      selectedMessageIndex(state) {
+          return state.formData.findIndex((item) => item.id === state.selectedMessage)
+      },
+      prevMessageId(state, getters) {
+        return state.formData[getters.selectedMessageIndex - 1]?.id
+      },
+      nextMessageId(state, getters) {
+          return state.formData[getters.selectedMessageIndex + 1]?.id
+      },
     },
     mutations: {
       setData(state, data) {
