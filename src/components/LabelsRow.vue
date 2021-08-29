@@ -39,7 +39,6 @@ export default {
             if(this.selectedMessage === null) return;
 
             const prevLabel = this.formData[this.selectedMessageIndex].label;
-            console.log(prevLabel)
             const newFormData = this.formData;
             newFormData[this.selectedMessageIndex].label = this.label.topic
             this.setFormData(newFormData);

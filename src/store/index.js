@@ -8,6 +8,7 @@ export default new Vuex.Store({
         dummyData: null,
         formData: [],
         selectedMessage: null,
+        creditPoint: 0,
     },
     getters: {
       target(state) {
@@ -47,6 +48,14 @@ export default new Vuex.Store({
       },
       setSelectedMessage(state, data) {
         state.selectedMessage = data;
+      },
+      setCreditPoint(state) {
+        state.creditPoint = state.creditPoint + 10000;
+      },
+      resetData(state) {
+        state.dummyData = null;
+        state.formData = null;
+        state.selectedMessage = null;
       }
     },
     actions: {
