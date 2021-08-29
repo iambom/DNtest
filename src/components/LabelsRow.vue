@@ -23,16 +23,28 @@ export default {
         },
         isSelected() {
             return this.formData[this.selectedMessageIndex]?.label === this.label.topic
+        },
+        nextMessageId() {
+            return this.formData[this.selectedMessageIndex + 1].id
+        },
+        isLastIndex() {
+            return this.selectedMessageIndex !== this.formData.length - 1
         }
+        
     },
     methods: {
         ...mapMutations([
-            'setFormData'
+            'setFormData',
+            'setSelectedMessage'
         ]),
         clickList() {
+            const prevLabel = this.formData[this.selectedMessageIndex].label;
+            console.log(prevLabel)
             const newFormData = this.formData;
             newFormData[this.selectedMessageIndex].label = this.label.topic
-            this.setFormData(newFormData)
+            this.setFormData(newFormData);
+
+            if(prevLabel === null && this.isLastIndex) this.setSelectedMessage(this.nextMessageId)
         }
     },
 }
