@@ -32,10 +32,16 @@
     font-stretch: normal;
     font-style: normal;
 }
+.labels-wrapper li {
+    cursor: pointer;
+}
 .labels-wrapper .title{
+    display: inline-block;
+    width: 114px;
     height: 48px;
+    line-height: 48px;
+    padding-left: 16px;
     font-family: AppleSDGothicNeo;
-    line-height: 1.54;
     letter-spacing: normal;
     color: #8c96a9;
 }

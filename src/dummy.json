@@ -1,3 +1,4 @@
+
 {
   "id": 1,
   "task": {
@@ -5,94 +6,106 @@
     "content": "AI can't without talking about context. Let's share the topics in each message so that you can talk smarter~! <br /><br /> Click on a topic in the list on the right for each message shown in the center of the screen :)"
   },
   "target": "PERSON",
-  "messages": {
-    "list": [
-      {
-        "id": 1,
-        "text": "What are you doing?",
-        "type": "AI",
-        "created": "오전 11:44:49"
-      },
-      {
-        "id": 2,
-        "text": "I have one more semester, <br /> but it would be great to have a job lined up.",
-        "type": "PERSON",
-        "created": "오전 11:45:46"
-      },
-      {
-        "id": 3,
-        "text": "How is your day going?",
-        "type": "AI",
-        "created": "오전 11:45:57"
-      },
-      {
-        "id": 4,
-        "text": "I'm not even half done yet.",
-        "type": "PERSON",
-        "created": "오전 11:46:15"
-      },
-      {
-        "id": 5,
-        "text": "Hm.......",
-        "type": "PERSON",
-        "created": "오전 10:55:22"
-      },
-      {
-        "id": 6,
-        "text": "You feel stressed out now.",
-        "type": "AI",
-        "created": "오전 10:55:26"
-      },
-      {
-        "id": 7,
-        "text": "That's an understatement.",
-        "type": "PERSON",
-        "created": "오전 10:55:34"
-      },
-      {
-        "id": 8,
-        "text": "What are you doing now?",
-        "type": "AI",
-        "created": "오전 10:55:35"
-      },
-      {
-        "id": 9,
-        "text": "I'm watching TV.",
-        "type": "PERSON",
-        "created": "오전 10:55:48"
-      },
-      {
-        "id": 10,
-        "text": "What's that?",
-        "type": "AI",
-        "created": "오전 10:55:49"
-      },
-      {
-        "id": 11,
-        "text": "You want to do something?",
-        "type": "PERSON",
-        "created": "오전 10:56:01"
-      },
-      {
-        "id": 12,
-        "text": "I'm going to the bank.",
-        "type": "AI",
-        "created": "오전 10:56:02"
-      },
-      {
-        "id": 13,
-        "text": "?",
-        "type": "PERSON",
-        "created": "오전 10:56:06"
-      },
-      {
-        "id": 14,
-        "text": "God~",
-        "type": "AI",
-        "created": "오전 10:56:07"
-      }
-    ]
-  },
+  "messages": [
+    {
+      "id": 1,
+      "text": "What are you doing?",
+      "type": "AI",
+      "created": "오전 11:44:49",
+      "avatar": "/conversation-avatar.png"
+    },
+    {
+      "id": 2,
+      "text": "I have one more semester, <br /> but it would be great to have a job lined up.",
+      "type": "PERSON",
+      "created": "오전 11:45:46",
+      "avatar": "/conversation-avatar.png"
+    },
+    {
+      "id": 3,
+      "text": "How is your day going?",
+      "type": "AI",
+      "created": "오전 11:45:57",
+      "avatar": "/conversation-avatar.png"
+    },
+    {
+      "id": 4,
+      "text": "I'm not even half done yet.",
+      "type": "PERSON",
+      "created": "오전 11:46:15",
+      "avatar": "/conversation-avatar.png"
+    },
+    {
+      "id": 5,
+      "text": "Hm.......",
+      "type": "PERSON",
+      "created": "오전 10:55:22",
+      "avatar": "/conversation-avatar.png"
+    },
+    {
+      "id": 6,
+      "text": "You feel stressed out now.",
+      "type": "AI",
+      "created": "오전 10:55:26",
+      "avatar": "/conversation-avatar.png"
+    },
+    {
+      "id": 7,
+      "text": "That's an understatement.",
+      "type": "PERSON",
+      "created": "오전 10:55:34",
+      "avatar": "/conversation-avatar.png"
+    },
+    {
+      "id": 8,
+      "text": "What are you doing now?",
+      "type": "AI",
+      "created": "오전 10:55:35",
+      "avatar": "/conversation-avatar.png"
+    },
+    {
+      "id": 9,
+      "text": "I'm watching TV.",
+      "type": "PERSON",
+      "created": "오전 10:55:48",
+      "avatar": "/conversation-avatar.png"
+    },
+    {
+      "id": 10,
+      "text": "What's that?",
+      "type": "AI",
+      "created": "오전 10:55:49",
+      "avatar": "/conversation-avatar.png"
+    },
+    {
+      "id": 11,
+      "text": "You want to do something?",
+      "type": "PERSON",
+      "created": "오전 10:56:01",
+      "avatar": "/conversation-avatar.png"
+    },
+    {
+      "id": 12,
+      "text": "I'm going to the bank.",
+      "type": "AI",
+      "created": "오전 10:56:02",
+      "avatar": "/conversation-avatar.png"
+    },
+    {
+      "id": 13,
+      "text": "?",
+      "type": "PERSON",
+      "created": "오전 10:56:06",
+      "avatar": "/conversation-avatar.png"
+    },
+    {
+      "id": 14,
+      "text": "God~",
+      "type": "AI",
+      "created": "오전 10:56:07",
+      "avatar": "/conversation-avatar.png"
+    }
+  ],
   "labels": {
     "title": "SELECTABLE LABELS",
     "description": "There are seven selectable themes. Read the message and chose the most appropriate topic!",

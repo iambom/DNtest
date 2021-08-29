@@ -39,12 +39,14 @@
 }
 
 .conversation-container .right {
-    justify-content: flex-end;
     text-align: right;
+    flex-direction: row-reverse;
 }
-.conversation-container .right .conversation {
-    cursor: pointer;
+.conversation-container .right button {
+   text-align: right;
+   display: flex;
+   flex-direction: row-reverse;
 }
-.conversation-container .right .conversation.active {
+.conversation-container .right.active .conversation {
     color: #00f7ff;
 }

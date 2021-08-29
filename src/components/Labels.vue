@@ -1,27 +1,17 @@
 <template>
   <div class="labels-container">
     <div class="text-wrapper">
-      <span class="title">SELECTABLE LABELS</span>
-      <p class="description">There are seven selectable themes. Read the message and choose the most appropriate topic!</p>
+      <span class="title">{{title}}</span>
+      <p class="description">{{description}}</p>
     </div>
     <div class="labels-wrapper">
+      <span class="title">TOPIC</span>
+      <span class="title">DESCRIPTION</span>
       <ul>
-        <li>
+        <li v-for="(label, index) in labelsList" :key="index" @click="clickList">
           <div class="list-wrapper">
-            <span class="title topic">TOPIC</span>
-            <span class="title ">DESCRIPTION</span>
-          </div>
-        </li>
-        <li>
-          <div class="list-wrapper">
-            <span class="topic">CLAIM</span>
-            <span class="description">Express opinion</span>
-          </div>
-        </li>
-        <li class="active">
-          <div class="list-wrapper">
-            <span class="topic">REACT</span>
-            <span class="description">Response to something</span>
+            <span class="topic">{{label.topic}}</span>
+            <span class="description">{{label.description}}</span>
           </div>
         </li>
       </ul>
@@ -30,7 +20,26 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-
+  computed: {
+    ...mapGetters([
+      'labels'
+    ]),
+    title() {
+      return this.labels.title
+    },
+    description() {
+      return this.labels.description
+    },
+    labelsList() {
+      return this.labels.list
+    }
+  },
+  methods: {
+    clickList() {
+      console.log(this.labels)
+    }
+  },
 }
 </script>

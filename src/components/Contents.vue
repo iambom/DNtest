@@ -7,7 +7,7 @@
   </div>
   <ToolBox></ToolBox>
 </div>
-</template>f
+</template>
 
 <script>
 import Conversation from './Conversation.vue';
@@ -16,12 +16,13 @@ import Labels from './Labels.vue';
 import ToolBox from './ToolBox.vue'
 
 export default {
+  props: ['data'],
   components: {
     Guide,
     Conversation,
     Labels,
     ToolBox
-  }
+  }, 
 }
 </script>
 
