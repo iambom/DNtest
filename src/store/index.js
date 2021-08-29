@@ -6,7 +6,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         dummyData: null,
-        formData: {},
+        formData: [],
+        selectedMessage: null,
     },
     getters: {
       target(state) {
@@ -17,7 +18,7 @@ export default new Vuex.Store({
       },
       labels(state) {
         return state.dummyData.labels
-      }
+      },
     },
     mutations: {
       setData(state, data) {
@@ -25,6 +26,9 @@ export default new Vuex.Store({
       },
       setFormData(state, data) {
         state.formData = data;
+      },
+      setSelectedMessage(state, data) {
+        state.selectedMessage = data;
       }
     },
     actions: {

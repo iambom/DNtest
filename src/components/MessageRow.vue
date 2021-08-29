@@ -1,5 +1,5 @@
 <template>
-<div :class="{'left': !isRight, 'right': isRight, 'active': isSelected}">
+<div :class="{'left': !isRight, 'right': isRight, 'active': isClicked}">
     <template v-if="isRight">
         <button @click="clickList">
             <span class="conversation" v-html="list.text"></span>
@@ -15,29 +15,43 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapState, mapGetters, mapMutations } from 'vuex'
 export default {
     props: {
         list: Object,
     },
     data() {
         return {
-            isSelected: false,
-        }
-    },
-    methods: {
-        clickList() {
-            this.isSelected = true;
         }
     },
     computed: {
-    ...mapGetters([
-      'target'
-    ]),
-    isRight() {
-        return this.list.type === this.target
-    }
-    }
+        ...mapState([
+            'formData',
+            'selectedMessage'
+        ]),
+        ...mapGetters([
+            'target'
+        ]),
+        isRight() {
+            return this.list.type === this.target
+        },
+        isClicked() {
+            return this.selectedMessage === this.list.id
+        },
+        messageIndex() {
+            return this.formData.findIndex((item) => item.id === this.list.id)
+        },
+        
+    },
+    methods: {
+        ...mapMutations([
+            'setSelectedMessage',
+            'setFormData'
+        ]),
+        clickList() {
+            this.setSelectedMessage(this.list.id)
+        }
+    },
 }
 </script>
 
