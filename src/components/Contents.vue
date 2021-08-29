@@ -16,7 +16,6 @@ import Labels from './Labels.vue';
 import ToolBox from './ToolBox.vue'
 
 export default {
-  props: ['data'],
   components: {
     Guide,
     Conversation,

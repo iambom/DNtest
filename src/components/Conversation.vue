@@ -1,14 +1,14 @@
 <template>
   <div class="conversation-container">
-      <MessageLow v-for="list in messages" :key="list.id" :list="list"></MessageLow>
+      <MessageRow v-for="list in messages" :key="list.id" :list="list"></MessageRow>
   </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
-import MessageLow from './MessageLow.vue'
+import MessageRow from './MessageRow.vue'
 export default {
-  components: { MessageLow },
+  components: { MessageRow },
   computed: {
     ...mapGetters([
       'messages',

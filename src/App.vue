@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header></Header>
-    <Contents :data="dummyData"></Contents>
+    <Contents></Contents>
   </div>
 </template>
 
@@ -15,11 +15,6 @@ export default {
     Header,
     Contents,
   },
-  data() {
-    return {
-      dummyData
-    }
-  },
   created() {
     this.fetchData()
   },
@@ -31,9 +26,9 @@ export default {
       'setData',
     ]),
     fetchData() {
-      const res = dummyData;
-      const {target, messages} = res;
-      this.setData(res)
+      const response = dummyData;
+      const {target, messages} = response;
+      this.setData(response)
 
       const formData = messages.filter((item) => {
         return item.type === target
@@ -42,7 +37,6 @@ export default {
       })
 
       this.setFormData(formData)
-      console.log(formData)
       
     }
   }

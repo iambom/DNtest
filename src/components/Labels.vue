@@ -8,12 +8,7 @@
       <span class="title">TOPIC</span>
       <span class="title">DESCRIPTION</span>
       <ul>
-        <li v-for="(label, index) in labelsList" :key="index" @click="clickList">
-          <div class="list-wrapper">
-            <span class="topic">{{label.topic}}</span>
-            <span class="description">{{label.description}}</span>
-          </div>
-        </li>
+        <LabelsRow v-for="(label, index) in labelsList" :key="index" :label="label"></LabelsRow>
       </ul>
     </div>
     </div>
@@ -21,7 +16,9 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import LabelsRow from './LabelsRow.vue'
 export default {
+  components: { LabelsRow },
   computed: {
     ...mapGetters([
       'labels'
@@ -34,11 +31,6 @@ export default {
     },
     labelsList() {
       return this.labels.list
-    }
-  },
-  methods: {
-    clickList() {
-      console.log(this.labels)
     }
   },
 }
